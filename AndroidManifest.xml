@@ -1,104 +1,106 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="it.iliad.android.vvm">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
-    <uses-permission android:name="android.permission.SEND_SMS"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
-    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
-    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-    <uses-permission android:name="android.permission.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS"/>
-    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
-    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
-    <uses-feature android:name="android.hardware.telephony.gsm" android:required="true"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="fr.freemobile.android.vvm.VoicemailApp">
-        <meta-data android:name="optimization_key" android:value="O+mCgjVnF2jxWefuIpp273LK5pwQ3Wgj1cAlzMOG8nCYArrDkmVIi3Aw4teb6rj9MT2PzmSOA2c3PgFYhpIowGPa+PmwD9BcGAscPZHTejupXeGQ15V+g0d62hZV4EcBpayY1IVNGDFeQ4YltqA18bFCdtSHyq3ePlQyOg5CwRkmIzrx5wAgJlZsOpCBB+cDRVq01NXyOpnupbtu8EVt0eS9cucoNOEP3DbUMnT5xpgmnGllaT+UwvqWqtQ3suIYCXw6wwMcRqy4UwnA2vKa925wqOz2QRwoY1hzYxEoW8g29GgolKlj33/qPmRV8aL+eqFJXdXSBil0N/qHO3/Qjg=="/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name="fr.freemobile.android.vvm.customui.activities.CustomUiActionBarActivity" android:theme="@style/CustomActionBarTheme"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="fr.freemobile.android.vvm.customui.launchscreens.FirstLaunchActivity" android:theme="@style/CustomActionBarTheme">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="5138" android:versionName="2.6.6" package="it.iliad.android.vvm">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="25" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-feature android:name="android.hardware.telephony.gsm" android:required="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application android:label="@c0515c/a" android:icon="@mipmap/ic_launcher" android:name="fr.freemobile.android.vvm.VoicemailApp" android:allowBackup="true">
+        <meta-data android:name="optimization_key" android:value="O+mCgjVnF2jxWefuIpp273LK5pwQ3Wgj1cAlzMOG8nCYArrDkmVIi3Aw4teb6rj9MT2PzmSOA2c3PgFYhpIowGPa+PmwD9BcGAscPZHTejupXeGQ15V+g0d62hZV4EcBpayY1IVNGDFeQ4YltqA18bFCdtSHyq3ePlQyOg5CwRkmIzrx5wAgJlZsOpCBB+cDRVq01NXyOpnupbtu8EVt0eS9cucoNOEP3DbUMnT5xpgmnGllaT+UwvqWqtQ3suIYCXw6wwMcRqy4UwnA2vKa925wqOz2QRwoY1hzYxEoW8g29GgolKlj33/qPmRV8aL+eqFJXdXSBil0N/qHO3/Qjg==" />
+        <activity android:theme="@style/CustomActionBarTheme" android:label="@c0515c/a" android:name="fr.freemobile.android.vvm.customui.activities.CustomUiActionBarActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/CustomActionBarTheme" android:name="fr.freemobile.android.vvm.customui.launchscreens.FirstLaunchActivity" android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="fr.freemobile.android.vvm.customui.activities.CustomUiPlayerActivity" android:parentActivityName="fr.freemobile.android.vvm.customui.activities.CustomUiActionBarActivity" android:theme="@style/CustomActionBarTheme">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".customui.activities.CustomUiActionBarActivity"/>
+        <activity android:theme="@style/CustomActionBarTheme" android:name="fr.freemobile.android.vvm.customui.activities.CustomUiPlayerActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:parentActivityName="fr.freemobile.android.vvm.customui.activities.CustomUiActionBarActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".customui.activities.CustomUiActionBarActivity" />
         </activity>
-        <activity android:name="fr.freemobile.android.vvm.customui.activities.VVMPreferencesActivity" android:parentActivityName="fr.freemobile.android.vvm.customui.activities.CustomUiActionBarActivity" android:theme="@style/PrefsTheme">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".customui.activities.CustomUiActionBarActivity"/>
+        <activity android:theme="@style/PrefsTheme" android:name="fr.freemobile.android.vvm.customui.activities.VVMPreferencesActivity" android:parentActivityName="fr.freemobile.android.vvm.customui.activities.CustomUiActionBarActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".customui.activities.CustomUiActionBarActivity" />
         </activity>
-        <activity android:name="fr.freemobile.android.vvm.customui.activities.HpAutoTutoActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <activity android:name="fr.freemobile.android.vvm.activity.ActivateVVMDialogActivity" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
-        <activity android:configChanges="orientation|screenSize" android:name="fr.freemobile.android.vvm.customui.activities.CustomUiSecretCodeActivity" android:theme="@style/Invisible"/>
-        <service android:exported="false" android:name="fr.freemobile.android.vvm.service.fetch.OmtpFetchService"/>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="fr.freemobile.android.vvm.customui.activities.HpAutoTutoActivity" />
+        <activity android:theme="@*android:style/Theme.DeviceDefault.Light.Dialog" android:name="fr.freemobile.android.vvm.activity.ActivateVVMDialogActivity" />
+        <activity android:theme="@style/Invisible" android:name="fr.freemobile.android.vvm.customui.activities.CustomUiSecretCodeActivity" android:configChanges="orientation|screenSize" />
+        <service android:name="fr.freemobile.android.vvm.service.fetch.OmtpFetchService" android:exported="false" />
         <receiver android:name="fr.freemobile.android.vvm.receiver.BootReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:enabled="true" android:name="fr.freemobile.android.vvm.receiver.UpgradeReceiver">
+        <receiver android:name="fr.freemobile.android.vvm.receiver.UpgradeReceiver" android:enabled="true">
             <intent-filter>
-                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
             </intent-filter>
         </receiver>
-        <provider android:authorities="it.iliad.vvm.provider.messages" android:exported="false" android:name="fr.freemobile.android.vvm.customui.MessageProvider"/>
-        <provider android:authorities="it.iliad.vvm.provider.archives" android:exported="false" android:name="fr.freemobile.android.vvm.customui.ArchiveProvider"/>
-        <activity android:name="fr.freemobile.android.vvm.customui.widget.message.MessageAppWidgetConfigure" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        <provider android:name="fr.freemobile.android.vvm.customui.MessageProvider" android:exported="false" android:authorities="it.iliad.vvm.provider.messages" />
+        <provider android:name="fr.freemobile.android.vvm.customui.ArchiveProvider" android:exported="false" android:authorities="it.iliad.vvm.provider.archives" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="fr.freemobile.android.vvm.customui.widget.message.MessageAppWidgetConfigure" android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
         </activity>
         <receiver android:label="@string/label_widget_message" android:name="fr.freemobile.android.vvm.customui.widget.message.MessageWidgetProvider">
             <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
-                <action android:name="it.iliad.android.vvm.customui.widget.message.REFRESH_AUTO"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="it.iliad.android.vvm.customui.widget.message.REFRESH_AUTO" />
             </intent-filter>
-            <meta-data android:name="android.appwidget.provider" android:resource="@xml/message_widget"/>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/message_widget" />
         </receiver>
-        <service android:exported="false" android:name="fr.freemobile.android.vvm.customui.widget.message.MessageWidgetProvider$MessageUpdateService"/>
-        <service android:exported="false" android:name="fr.freemobile.android.vvm.customui.widget.message.MessageWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
-        <activity android:name="fr.freemobile.android.vvm.customui.activities.RecorderActivity" android:theme="@style/CustomActionBarTheme"/>
-        <service android:exported="false" android:name="fr.freemobile.android.vvm.ImapService"/>
-        <service android:exported="true" android:name="fr.freemobile.android.vvm.service.OmtpSMSJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <service android:exported="true" android:name="fr.freemobile.android.vvm.service.SimStateChangedJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <service android:exported="true" android:name="fr.freemobile.android.vvm.service.OmtpFetchJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <service android:exported="true" android:name="fr.freemobile.android.vvm.service.ProviderChangeJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <service android:exported="true" android:name="fr.freemobile.android.vvm.service.SyncMessagesJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <service android:exported="true" android:name="fr.freemobile.android.vvm.service.StatusJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <service android:enabled="true" android:name="fr.freemobile.android.vvm.service.old.ConsoSmsService"/>
-        <service android:enabled="true" android:name="fr.freemobile.android.vvm.service.old.NetworkService"/>
-        <service android:enabled="true" android:name="fr.freemobile.android.vvm.service.old.OmtpFetchService"/>
-        <service android:enabled="true" android:name="fr.freemobile.android.vvm.service.old.SimStateChangedService"/>
-        <service android:enabled="true" android:name="fr.freemobile.android.vvm.service.old.OmtpSMSService"/>
-        <service android:enabled="true" android:name="fr.freemobile.android.vvm.service.old.ProviderChangeService"/>
-        <service android:enabled="true" android:name="fr.freemobile.android.vvm.service.old.StatusService"/>
-        <service android:enabled="true" android:exported="true" android:label="RockService" android:name="fr.freemobile.android.rock.services.RockService"/>
+        <service android:name="fr.freemobile.android.vvm.customui.widget.message.MessageWidgetProvider$MessageUpdateService" android:exported="false" />
+        <service android:name="fr.freemobile.android.vvm.customui.widget.message.MessageWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS" android:exported="false" />
+        <activity android:theme="@style/CustomActionBarTheme" android:name="fr.freemobile.android.vvm.customui.activities.RecorderActivity" />
+        <service android:name="fr.freemobile.android.vvm.ImapService" android:exported="false" />
+        <service android:name="fr.freemobile.android.vvm.service.OmtpSMSJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true" />
+        <service android:name="fr.freemobile.android.vvm.service.SimStateChangedJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true" />
+        <service android:name="fr.freemobile.android.vvm.service.OmtpFetchJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true" />
+        <service android:name="fr.freemobile.android.vvm.service.ProviderChangeJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true" />
+        <service android:name="fr.freemobile.android.vvm.service.SyncMessagesJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true" />
+        <service android:name="fr.freemobile.android.vvm.service.StatusJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true" />
+        <service android:name="fr.freemobile.android.vvm.service.old.ConsoSmsService" android:enabled="true" />
+        <service android:name="fr.freemobile.android.vvm.service.old.NetworkService" android:enabled="true" />
+        <service android:name="fr.freemobile.android.vvm.service.old.OmtpFetchService" android:enabled="true" />
+        <service android:name="fr.freemobile.android.vvm.service.old.SimStateChangedService" android:enabled="true" />
+        <service android:name="fr.freemobile.android.vvm.service.old.OmtpSMSService" android:enabled="true" />
+        <service android:name="fr.freemobile.android.vvm.service.old.ProviderChangeService" android:enabled="true" />
+        <service android:name="fr.freemobile.android.vvm.service.old.StatusService" android:enabled="true" />
+        <service android:label="RockService" android:name="fr.freemobile.android.rock.services.RockService" android:enabled="true" android:exported="true" />
         <receiver android:name="fr.freemobile.android.rock.services.RockBroadcastReceiver">
             <intent-filter>
-                <action android:name="fr.freemobile.android.rock.services.ROCK_ALARM"/>
+                <action android:name="fr.freemobile.android.rock.services.ROCK_ALARM" />
             </intent-filter>
         </receiver>
-        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
-        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        <receiver android:exported="true" android:name="org.piwik.sdk.InstallReferrerReceiver">
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <receiver android:name="org.piwik.sdk.InstallReferrerReceiver" android:exported="true">
             <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
             </intent-filter>
         </receiver>
-        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT" />
     </application>
 </manifest>
